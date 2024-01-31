@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class SerializableValuePair<Tkey, TValue>
 {
     public Tkey Key;
@@ -40,7 +41,7 @@ public class InventorySystem : MonoBehaviour
     public void SyncDictList()
     {
         inventoryList.Clear();
-        foreach (var pair in inventoryList)
+        foreach (var pair in inventory)
         {
             inventoryList.Add(new SerializableValuePair<int, Items> ( pair.Key, pair.Value ));
         }

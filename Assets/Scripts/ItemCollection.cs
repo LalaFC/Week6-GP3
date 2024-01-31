@@ -36,6 +36,7 @@ public class ItemCollection : MonoBehaviour
     public void CollectItem(Items item)
     {
         inventorySystems.AddItem(item);
+        Debug.Log("Item Collected");
     }
     private void OnDrawGizmos()
     {
