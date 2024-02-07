@@ -34,7 +34,7 @@ public class PlayerEquipmentManager : MonoBehaviour
             isCreated = true;
             destroyPrev = true;
         }
-        //EquipWeapon(WeaponModel)
+        EquipWeapon(WeaponModel.GetComponent<WeaponAbilities>());
     }
     public void EquipWeapon(WeaponAbilities weaponFX)
     {
